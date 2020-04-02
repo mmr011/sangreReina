@@ -10,28 +10,46 @@ body {
 
 html {
   font-size: 18px;
-  font-family: Robot Slab, sans-serif;
+  font-family: Rubik, sans-serif;
+  color: hsl(216, 13%, 57%);
+}
+
+h1 {
+  margin-top: 5%;
+  font-family: Roboto Slab, serif;
+}
+
+div {
+  box-shadow: 0px 5px 20px 2px hsl(60, 12%, 12%);
 }
 
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row-reverse;
   background-image: url('./white-ceramic-cup.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom; 
+  background-position: 0px -275px; 
   text-align: center;
   height:  100%;
   width: 100%;
 }
 
-h1 {
-  font-family: Roboto Slab, serif;
+.container {
+  height: 100%;
 }
 
-h2 {
-  font-family: Rubik, sans-serif;
-}
-
-.App-header {
+.carousel {
   margin: auto;
 }
 
+.logo {
+  background-image: url('./logo.png');
+  background-size: cover;
+  height: 71%;
+  width: 46%;
+  border-radius: 50%;
+  margin-left: .5rem;
+}

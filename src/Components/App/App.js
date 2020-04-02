@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
+import Carousel from '../Carousel/Carousel';
+import Banner from '../Banner/Banner';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='App-header'>Hello c:</h1>
-      <p>Hi there c:</p>
+    <div className='container'>
+      <Banner />
+      <div className="App">
+        <Carousel className='carousel'/>
+        <div className='logo'></div>
+      </div>
     </div>
   );
 }
