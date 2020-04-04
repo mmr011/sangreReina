@@ -1,5 +1,6 @@
 .carousel {
     background-color: hsl(94, 33%, 4%);
+    box-shadow: 0px 5px 20px 2px hsl(60, 12%, 12%);
     margin-right: .7rem;
     height: 52%;
     width: 42%;
