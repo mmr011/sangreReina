@@ -8,7 +8,7 @@ function App() {
     <div className='container'>
       <Banner />
       <div className="App">
-        <Carousel className='carousel'/>
+        <Carousel />
         <div className='logo'></div>
       </div>
     </div>

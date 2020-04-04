@@ -1,0 +1,9 @@
+.button-container {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.button {
+    color: hsl(216, 13%, 57%);
+    font-family: Rubik, sans-serif;
+}

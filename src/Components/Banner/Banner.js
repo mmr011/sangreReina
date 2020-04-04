@@ -1,10 +1,13 @@
 import React from 'react';
 import './Banner.css';
+import Buttons from '../Buttons/Buttons'
 
 class Banner extends React.Component {
     render() {
       return (
-          <nav>this is a nave bar</nav>
+          <div className='banner'>
+            <Buttons />
+          </div>
       )  
     }
 };

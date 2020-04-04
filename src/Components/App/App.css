@@ -41,10 +41,6 @@ div {
   height: 100%;
 }
 
-.carousel {
-  margin: auto;
-}
-
 .logo {
   background-image: url('./logo.png');
   background-size: cover;
