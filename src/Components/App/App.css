@@ -56,7 +56,7 @@ h1 {
 }
 
 .info {
-  /* display:none; */
+  display:none;
   position: absolute;
   height: 25%;
   width: 25%;

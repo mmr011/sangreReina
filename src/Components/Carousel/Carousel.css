@@ -5,4 +5,31 @@
     height: 52%;
     width: 42%;
     text-align: center;
+    overflow: hidden;
+}
+
+p {
+    color: white; 
+    position: absolute; 
+    bottom: 40%;
+    left: 48%; 
+
+
+}
+
+.solo-caption {
+    color: white;
+    text-decoration: underline;
+}
+
+.trio-caption {
+    color: red;
+        text-decoration: underline;
+
+}
+
+.crates-caption {
+    color: blue;
+    text-decoration: underline;
+
 }
