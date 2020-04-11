@@ -1,5 +1,14 @@
+p {
+    font-family: 'Noto Serif', sans-serif; 
+    
+}
+
+ul {
+    list-style-type: none;
+    text-align: start; 
+}
+
 .carousel {
-    background-color: hsl(94, 33%, 4%);
     box-shadow: 0px 5px 20px 2px hsl(60, 12%, 12%);
     margin-right: .7rem;
     height: 52%;
@@ -8,28 +17,28 @@
     overflow: hidden;
 }
 
-p {
-    color: white; 
-    position: absolute; 
-    bottom: 40%;
-    left: 48%; 
-
-
-}
-
 .solo-caption {
-    color: white;
-    text-decoration: underline;
+    position: absolute; 
+    bottom: 30%;
+    left: 47%; 
+    font-size: 2rem;
 }
 
 .trio-caption {
-    color: red;
-        text-decoration: underline;
-
+    position: absolute; 
+    bottom: 13%;
+    left: 47%; 
+    font-size: 1.3rem;
 }
 
 .crates-caption {
-    color: blue;
-    text-decoration: underline;
+    position: absolute; 
+    bottom: 31%;
+    left: 47%; 
+    font-size: 1.3rem;
+}
 
+.carousel-content {
+    background-color: hsl(94, 33%, 4%);
+    opacity: .8; 
 }

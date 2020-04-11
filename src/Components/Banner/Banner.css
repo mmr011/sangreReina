@@ -1,3 +1,6 @@
+button {
+    background-color: hsl(94, 33%, 4%);
+}
 .banner {
     display: inline-flex;
     justify-content: flex-end;   
@@ -18,3 +21,14 @@
     border: 2px solid hsl(216, 13%, 57%);
     border-radius: 50px;
 }
+
+.info {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background-color: #51141C;
+    margin: auto;
+    right: 50%;
+    padding: 5%;
+  
+  }

@@ -1,18 +1,32 @@
 import React from 'react';
 import './Banner.css';
-// import Buttons from '../Buttons/Buttons'
 
 class Banner extends React.Component {
+  constructor(props) {
+    super(props);
+    this.stats = {
+      showPopUp: false
+    };
+    this.renderPopUp = this.renderPopUp.bind(this); 
+  }
   
+  renderPopUp() {
+    this.setState({ showPopUp: true }); 
+  }
 
-    render() {
-      return (
-          <div className='banner'>
-            <div className='button'>button 1</div>
-            <div className='button'>button 2</div>
-          </div>
-      )  
-    }
+  infoPopUp() {
+    
+  }
+
+  render() {
+    return (
+        <div className='banner'>
+          <button className='button' id='button1'>button 1</button>
+          <button className='button' id='button2'>button 2</button>
+          
+        </div>
+     )  
+  }
 };
 
 export default Banner;

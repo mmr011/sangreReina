@@ -1,1 +1,4 @@
- 
+<div className='into'  onClick={this.renderPopUp}>
+          <p>El té Sangre de Reina es hecho a mano y solo con ingredientes fresccos y
+            naturales para darle ese toque esepcial que no encontrarás cualquier te.</p>
+          </div>

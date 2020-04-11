@@ -19,21 +19,21 @@ const photos = [
     {
         
         id: 1, 
-        image: <img width='46%' opacity="1" src={Solo} />,
+        image: <img width='47%' opacity="1" src={Solo} />,
         caption: <p className='solo-caption'>Te Artesanal Sangre de Reina</p>
     }, 
     {
         id: 2, 
-        image: <img width='46%' opacity="1" src={Trio} />,
+        image: <img width='47%' opacity="1" src={Trio} />,
         caption: <p className='trio-caption'>
-                    Contiene ingredientes medicinales como: <br/>
+                    Contiene ingredientes medicinales como: 
                     {ingredientes}
                     </p>
     }, 
     {
         id: 3, 
-        image: <img width='46%' opacity="1" src={Crates} />,
-        caption: <p classNaem='crates-caption'>Hecho incgredientes saludables y empacado a mano</p>
+        image: <img width='47%' opacity="1" src={Crates} />,
+        caption: <p className='crates-caption'>Hecho incgredientes saludables y empacado a mano</p>
     } 
 ]
 
@@ -59,7 +59,7 @@ class Carousel extends  React.Component {
                     {
                         photos.map(photo => {
                             return (
-                                <div>
+                                <div className='carousel-content'>
                                     {photo.image}
                                     {photo.caption}
                                 </div>
