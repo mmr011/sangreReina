@@ -3,8 +3,7 @@ import Slider from 'react-slick';
 import Solo from './solo-bottle.jpg';
 import Trio from './trio-bottle.jpg';
 import Crates from './bottle-crates.jpg'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 import './Carousel.css';
 
 const ingredientes = (
@@ -19,12 +18,12 @@ const photos = [
     {
         
         id: 1, 
-        image: <img width='47%' opacity="1" src={Solo} />,
-        caption: <p className='solo-caption'>Te Artesanal Sangre de Reina</p>
+        image: <img width='47%' src={Solo} />,
+        caption: <p className='solo-caption'>Infusión Artesanal Sangre de Reina</p>
     }, 
     {
         id: 2, 
-        image: <img width='47%' opacity="1" src={Trio} />,
+        image: <img width='47%' src={Trio} />,
         caption: <p className='trio-caption'>
                     Contiene ingredientes medicinales como: 
                     {ingredientes}
@@ -32,7 +31,7 @@ const photos = [
     }, 
     {
         id: 3, 
-        image: <img width='47%' opacity="1" src={Crates} />,
+        image: <img width='47%' src={Crates} />,
         caption: <p className='crates-caption'>Hecho incgredientes saludables y empacado a mano</p>
     } 
 ]
