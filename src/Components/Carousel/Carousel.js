@@ -32,7 +32,7 @@ const photos = [
     {
         id: 3, 
         image: <img width='47%' src={Crates} />,
-        caption: <p className='crates-caption'>Hecho incgredientes saludables y empacado a mano</p>
+        caption: <p className='crates-caption'>Hecho incgredientes medicinales saludables y empacado a mano</p>
     } 
 ]
 
@@ -58,7 +58,7 @@ class Carousel extends  React.Component {
                     {
                         photos.map(photo => {
                             return (
-                                <div className='carousel-content'>
+                                <div key={photo.id} className='carousel-content'>
                                     {photo.image}
                                     {photo.caption}
                                 </div>

@@ -5,33 +5,28 @@ import Banner from '../Banner/Banner';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-
 class App extends React.Component { 
   constructor(props) {
     super(props); 
     this.state = {
       showModal: false 
     }
-    this.popUp = this.popUp.bind(this);
-    this.hidePopUp = this.hidePopUp.bind(this);
+    this.togglePopUp = this.togglePopUp.bind(this);
   }
 
-  popUp() {
-    this.setState({ showModal: true });
-  }
-
-  hidePopUp() {
-    this.setState({ showModal: false });
+  togglePopUp() {
+    this.setState({ showModal: !this.state.showModal });
   }
 
   render() {
     return (
-      <div className='container'>
+      <div id='App' className='container'>
         <Banner 
           showModal={this.state.showModal}
-          popUp={this.popUp}
-          hidePopUp={this.hidePopUp}/>
-        <div className="App">
+          togglePopUp={this.togglePopUp}
+          />
+        <div className="App"
+          onClick={this.hidePopUp}>
           <Carousel />
           <div className='logo'></div>
         </div>
