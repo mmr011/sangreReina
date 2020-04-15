@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Carousel from '../Carousel/Carousel';
 import Banner from '../Banner/Banner';
+import Ingredients from '../Ingredients/Ingredients'
+import { Transition, animated } from 'react-spring/renderprops'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -30,6 +32,18 @@ class App extends React.Component {
           <Carousel />
           <div className='logo'></div>
         </div>
+        <Transition
+          native
+          items={this.state.showModal}
+          from={{ opacity: 0 }}
+          enter={{ opacity: 1 }}
+          leave={{ opacity: 0 }}>
+          {show => show && (props => (
+            <animated.div  sytle={props}>
+              <Ingredients togglePopUp={this.props.togglePopUp} />
+            </animated.div>
+          ))}
+        </Transition>
       </div>
     );
   }
