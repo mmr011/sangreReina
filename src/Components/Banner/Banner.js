@@ -1,9 +1,33 @@
 import React from 'react';
-// import Ingredients from '../Ingredients/Ingredients'
-// import { Transition, animated } from "react-spring/renderprops";
+import Ingredients from '../PopUps/Ingredients'
+import Order from '../PopUps/Order'
+// import { Transition, animated } from 'react-spring/renderprops'
 import './Banner.css';
 
 class Banner extends React.Component {
+  showIngredients() {
+    if(this.props.showIngredients) {
+      return (
+        <Ingredients 
+        toggleIngredients={this.props.toggleIngredients}
+         />
+      )
+    } else {
+      return; 
+    }
+  }
+
+  showOrder() {
+    if(this.props.showOrder) {
+      return (
+        <Order 
+        toggleOrder={this.props.toggleOrder}
+        />
+      )
+    } else {
+      return; 
+    }
+  }
   
   handleMouseOver() {
     const button = document.getElementById('button'); 
@@ -21,11 +45,14 @@ class Banner extends React.Component {
           <button
             id='button' 
             className='button' 
-            onClick={this.props.togglePopUp}
+            onClick={this.props.toggleIngredients}
             onMouseOver={this.handleMouseOver}
             onMouseLeave={this.handleMouseOut}>Ingredientes</button>
-          <button className='button'>Ordenar</button>
-        
+          <button 
+          className='button'
+          onClick={this.props.toggleOrder}>Ordenar</button>
+          {this.showIngredients()}
+          {this.showOrder()}
         </div>
      )  
   }

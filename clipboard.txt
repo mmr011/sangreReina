@@ -25,3 +25,36 @@ onMouseOver={this.handleMouseOver}
 
 
   {this.showIngredients()}
+
+
+  <div className='modal-content'>
+          <button 
+            className='modal-button'
+            onClick={this.props.togglePopUp}>x</button>
+            <p>La infusión artesanal Sangre de Reina es hecho a mano y solo con ingredientes fresccos y
+              naturales para darle ese toque esepcial que no encontrarás cualquier te.</p>
+            <h3>Lista de ingredientes:</h3>
+            <ul>
+              <li>Agua Filtrada</li>
+              <li>Jengibre</li>
+              <li>Canela</li>
+              <li>Flor de Jamaica</li>
+              <li>Anís Estrellado</li>
+              <li>Clavos</li>
+            </ul>
+         </div>
+
+
+showIngredients() {
+    if(this.props.showModal) {
+      return (
+        <Ingredients 
+        togglePopUp={this.props.togglePopUp}
+        showModal={this.props.showModal} />
+      )
+    } else {
+      return; 
+    }
+  }
+
+            {this.showIngredients()}

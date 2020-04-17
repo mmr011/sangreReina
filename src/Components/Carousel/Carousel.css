@@ -39,6 +39,30 @@ ul {
 }
 
 .carousel-content {
-    background-color: hsl(94, 33%, 4%);
-    opacity: .8; 
+    background-color: hsla(94, 33%, 4%, .8);
+    height: auto; 
+}
+
+@media (min-width: 300px) and (max-width: 500px)  and (orientation: portrait) {
+    .carousel {
+        height: auto;
+        width: 80%;
+        margin: 9% 0 14% 0;
+        box-shadow: none; 
+    }
+
+    .crates-caption {
+        bottom: 14%;
+    }
+
+    .solo-caption {
+        bottom: 1%; 
+        font-size: 1.8rem;
+    }
+
+    .trio-caption {
+        bottom: 3%;
+        font-size: 1rem;
+    }
+    
 }

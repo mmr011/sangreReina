@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import Solo from './solo-bottle.jpg';
 import Trio from './trio-bottle.jpg';
 import Crates from './bottle-crates.jpg'
-
 import './Carousel.css';
 
 const ingredientes = (
@@ -47,7 +46,7 @@ class Carousel extends  React.Component {
             slidesToShow: 1, 
             slidesToScroll: 1,
             fade: true,
-            autoplay: true, 
+            autoplay: false, 
             pauseOnHover: true,
             className: 'slides'
         }
