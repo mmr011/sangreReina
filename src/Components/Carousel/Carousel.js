@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import Solo from './solo-bottle.jpg';
 import Trio from './trio-bottle.jpg';
-import Crates from './bottle-crates.jpg'
+import Crates from './bottle-crates.jpg';
 import './Carousel.css';
 
 const ingredientes = (

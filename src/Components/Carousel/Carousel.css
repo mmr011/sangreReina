@@ -18,24 +18,27 @@ ul {
 }
 
 .solo-caption {
-    position: absolute; 
-    bottom: 30%;
-    left: 47%; 
+    position: relative;
+    width: 50%;
+    bottom: 16rem;
+    left: 49%;
     font-size: 2rem;
 }
 
 .trio-caption {
-    position: absolute; 
-    bottom: 13%;
-    left: 47%; 
+    position: relative;
+    width: 50%;
+    bottom: 17.3rem;
+    left: 47%;
     font-size: 1.3rem;
 }
 
 .crates-caption {
-    position: absolute; 
-    bottom: 31%;
-    left: 47%; 
-    font-size: 1.3rem;
+    position: relative;
+    bottom: 15.8rem;
+    left: 49%;
+    font-size: 1.5rem;
+    width: 50%;
 }
 
 .carousel-content {
@@ -45,24 +48,46 @@ ul {
 
 @media (min-width: 300px) and (max-width: 500px)  and (orientation: portrait) {
     .carousel {
-        height: auto;
-        width: 80%;
+        height: 14.2rem;
+        width: 85%;
         margin: 9% 0 14% 0;
-        box-shadow: none; 
     }
 
-    .crates-caption {
-        bottom: 14%;
-    }
+    /* .crates-caption {
+        bottom: 2%;
+    } */
 
     .solo-caption {
-        bottom: 1%; 
+        bottom: 16rem;
         font-size: 1.8rem;
     }
 
     .trio-caption {
-        bottom: 3%;
-        font-size: 1rem;
+        bottom: 16rem;
+        font-size: 1.13rem;
     }
     
+}
+
+@media (min-width: 510px) and (max-width: 1030px) {
+    .carousel {
+        width: 69%;
+        margin-bottom: 9%;
+        height: 32%;
+    }
+
+    .solo-caption {
+        font-size: 3rem;
+        bottom: 24rem;
+    }
+
+    .trio-caption {
+        font-size: 2rem;
+        bottom: 26rem;
+    }
+
+    .crates-caption {
+        font-size: 2rem;
+        bottom: 21rem;
+    }
 }
