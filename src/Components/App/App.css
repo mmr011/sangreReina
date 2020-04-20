@@ -32,7 +32,7 @@ h1 {
   background-image: url('./white-ceramic-cup.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: 0px -275px;  */
+  background-position: 0px -275px; 
   text-align: center;
   height:  100%;
   width: 100%;
@@ -41,6 +41,7 @@ h1 {
 .logo {
   background-image: url('./logo.png');
   background-size: cover;
+  background-position: center;
   height: 71%;
   width: 46%;
   border-radius: 50%;
@@ -71,7 +72,7 @@ h1 {
   }
 }
 
-@media (min-width: 510px) and (max-width: 1030px) {
+@media (min-width: 510px) and (max-width: 1024px) {
   html {
     font-size: 14px;
   }

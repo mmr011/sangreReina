@@ -53,18 +53,14 @@ ul {
         margin: 9% 0 14% 0;
     }
 
-    /* .crates-caption {
-        bottom: 2%;
-    } */
-
     .solo-caption {
         bottom: 16rem;
         font-size: 1.8rem;
     }
 
     .trio-caption {
-        bottom: 16rem;
-        font-size: 1.13rem;
+        bottom: 15.5rem;
+        font-size: 1.11rem;
     }
     
 }

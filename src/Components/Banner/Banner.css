@@ -46,7 +46,7 @@ button {
     position: relative;
     height: auto; 
     width: 55%;
-    margin: 9% auto;
+    margin: 7% auto;
     padding: 28px;
     border-radius: 10px;
 }
@@ -61,33 +61,14 @@ button {
     background-color: hsl(352.1,60.4%,19.8%);
 }
 
-/* .fade-in {
-    animation: fadeIn .7s;
+.modal-content a {
+    text-decoration: none; 
+    color: hsl(172.1,60.4%,32.8%); 
 }
 
-.fade-out {
-    animation: fadeOut 1s; 
+.modal-content ul, ol {
+    line-height: 2rem;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1; 
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0; 
-    }
-} */
 
 @media only screen and (max-width: 1020px) {
     .button {
@@ -101,7 +82,9 @@ button {
     }
     
     .modal-content ol {
-        margin: 0; 
+        font-size: 0.9rem;
+        margin: 0;
+        line-height: 1.5rem;
     }
 }
 

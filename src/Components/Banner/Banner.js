@@ -1,7 +1,6 @@
 import React from 'react';
 import Ingredients from '../PopUps/Ingredients'
 import Order from '../PopUps/Order'
-// import { Transition, animated } from 'react-spring/renderprops'
 import './Banner.css';
 
 class Banner extends React.Component {
@@ -10,7 +9,7 @@ class Banner extends React.Component {
       return (
         <Ingredients 
         toggleIngredients={this.props.toggleIngredients}
-         />
+        />
       )
     } else {
       return; 

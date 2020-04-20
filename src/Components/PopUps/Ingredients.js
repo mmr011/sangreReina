@@ -1,6 +1,4 @@
 import React from 'react';
-import './PopUps.css'
-// import { Transition, animated } from 'react-spring'
 
 class Ingredients extends React.Component {
  
