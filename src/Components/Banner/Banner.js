@@ -1,6 +1,7 @@
 import React from 'react';
 import Ingredients from '../PopUps/Ingredients'
 import Order from '../PopUps/Order'
+import Contacts from '../PopUps/Contacts'
 import './Banner.css';
 
 class Banner extends React.Component {
@@ -10,7 +11,7 @@ class Banner extends React.Component {
         <Ingredients 
         toggleIngredients={this.props.toggleIngredients}
         />
-      )
+      );
     } else {
       return; 
     }
@@ -22,7 +23,18 @@ class Banner extends React.Component {
         <Order 
         toggleOrder={this.props.toggleOrder}
         />
-      )
+      );
+    } else {
+      return; 
+    };
+  }
+
+  showContacts() {
+    if(this.props.showContacts) {
+      return(
+        <Contacts 
+        toggleContacts={this.props.toggleContacts}/>
+      ); 
     } else {
       return; 
     }
@@ -48,6 +60,16 @@ class Banner extends React.Component {
     button2.style.backgroundColor = 'hsla(94, 33%, 4%, 0.6)';
   }
 
+  handleMouseOverContacts() {
+    const button3 = document.getElementById('button3'); 
+    button3.style.backgroundColor = 'hsl(352.1,60.4%,19.8%)';
+  }
+
+  handleMouseOutContacts() {
+    const button3 = document.getElementById('button3'); 
+    button3.style.backgroundColor = 'hsla(94, 33%, 4%, 0.6)';
+  }
+
   render() {
     return (
         <div className='banner'>
@@ -63,8 +85,15 @@ class Banner extends React.Component {
           onClick={this.props.toggleOrder}
           onMouseOver={this.handleMouseOverOrders}
           onMouseLeave={this.handleMouseOutOrders}>Ordenar</button>
+          <button
+          id='button3'
+          className='button'
+          onClick={this.props.toggleContacts}
+          onMouseOver={this.handleMouseOverContacts}
+          onMouseLeave={this.handleMouseOutContacts}>Contacts</button>
           {this.showIngredients()}
           {this.showOrder()}
+          {this.showContacts()}
         </div>
      )  
   }

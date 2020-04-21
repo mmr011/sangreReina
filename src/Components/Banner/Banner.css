@@ -108,6 +108,8 @@ button {
     }
 
     .modal-content ol {
-        margin: 0; 
+        font-size: 1.2rem;
+        margin: 0;
+        line-height: 3rem;
     }
 }

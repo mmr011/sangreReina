@@ -1,5 +1,4 @@
 import React from 'react'; 
-// import './PopUps.css';
 
 class Order extends React.Component {
     render() {
