@@ -47,7 +47,14 @@ ul {
     font-size: 1.5rem;
     width: 50%;
     left: 49%; 
-    
+}
+
+.little-caption {
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 14rem;
+    width: 50%;
+    left: 49%;
 }
 
 .carousel-content {

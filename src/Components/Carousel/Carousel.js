@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Iced from './iced.jpg'
+import Little from './little-bottle.jpg';
+import Iced from './iced.jpg';
 import Solo from './bottle-with-cup.jpg';
 import Trio from './trio-bottle.jpg';
 import Crates from './bottle-crates.jpg';
@@ -38,6 +39,11 @@ const photos = [
         id: 4, 
         image: <img width='47%' src={Iced} />,
         caption: <p className='iced-caption'>Alternativa perfecta para refrescarse en días caluroso</p>
+    }, 
+    {
+        id: 5, 
+        image: <img width='47%' src={Little} />, 
+        caption: <p className='little-caption'>Disponible de 1 litro ($10) y medio litro ($5)</p>
     }
 ]
 
