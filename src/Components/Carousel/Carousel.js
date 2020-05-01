@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Solo from './solo-bottle.jpg';
+import Iced from './iced.jpg'
+import Solo from './bottle-with-cup.jpg';
 import Trio from './trio-bottle.jpg';
 import Crates from './bottle-crates.jpg';
 import './Carousel.css';
@@ -18,7 +19,7 @@ const photos = [
         
         id: 1, 
         image: <img width='47%' src={Solo} />,
-        caption: <p className='solo-caption'>Infusión Artesanal Sangre de Reina</p>
+        caption: <p className='solo-caption'>Infusión Artesanal Medicinal</p>
     }, 
     {
         id: 2, 
@@ -32,7 +33,12 @@ const photos = [
         id: 3, 
         image: <img width='47%' src={Crates} />,
         caption: <p className='crates-caption'>Hecho incgredientes medicinales saludables y empacado a mano</p>
-    } 
+    }, 
+    {
+        id: 4, 
+        image: <img width='47%' src={Iced} />,
+        caption: <p className='iced-caption'>Alternativa perfecta para refrescarse en días caluroso</p>
+    }
 ]
 
 class Carousel extends  React.Component {

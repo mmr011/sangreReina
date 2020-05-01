@@ -32,7 +32,6 @@ h1 {
   background-image: url('./white-ceramic-cup.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -275px; 
   text-align: center;
   height:  100%;
   width: 100%;
@@ -62,8 +61,8 @@ h1 {
     flex-direction: column-reverse;
     height: 100%;
     background-size: auto;
-    background-position: center; 
-  }
+    background-position-x: center;
+    background-position-y: -265px;  }
 
   .logo {
     width: 85%;
@@ -77,9 +76,10 @@ h1 {
     font-size: 14px;
   }
   .App {
-    background-position: center; 
+    background-position-x: center;
+    background-size: auto;
     flex-direction: column-reverse;
-
+    background-position-y: -60px;
   }
 
   .logo {

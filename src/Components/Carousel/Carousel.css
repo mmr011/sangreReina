@@ -11,7 +11,7 @@ ul {
 .carousel {
     box-shadow: 0px 5px 20px 2px hsl(60, 12%, 12%);
     margin-right: .7rem;
-    height: 52%;
+    height: 55%;
     width: 42%;
     text-align: center;
     overflow: hidden;
@@ -41,9 +41,18 @@ ul {
     width: 50%;
 }
 
+.iced-caption {
+    position: relative;
+    bottom: 13.8rem;
+    font-size: 1.5rem;
+    width: 50%;
+    left: 49%; 
+    
+}
+
 .carousel-content {
     background-color: hsla(94, 33%, 4%, .8);
-    height: auto; 
+    height: auto;
 }
 
 @media (min-width: 300px) and (max-width: 500px)  and (orientation: portrait) {

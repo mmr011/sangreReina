@@ -12,7 +12,7 @@ class Ingredients extends React.Component {
             className='modal-button'
             onClick={this.props.toggleIngredients}>x</button>
             <p>La infusión artesanal Sangre de Reina es hecho a mano y solo con ingredientes fresccos y
-              naturales para darle ese toque esepcial que no encontrarás cualquier te.</p>
+              naturales para darle ese toque esepcial que no encontrarás cualquier infusión.</p>
             <h3>Lista de ingredientes:</h3>
             <ul>
               <li>Agua Filtrada</li>
@@ -20,7 +20,7 @@ class Ingredients extends React.Component {
               <li>Canela</li>
               <li>Flor de Jamaica</li>
               <li>Anís Estrellado</li>
-              <li>Clavos</li>
+              <li>Clavos de Especias</li>
             </ul>
          </div>
     </div>
