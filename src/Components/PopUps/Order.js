@@ -8,7 +8,7 @@ class Order extends React.Component {
                     <button 
                     className='modal-button'
                     onClick={this.props.toggleOrder}>x</button>
-                    <h3>Puedes ordenar esta infusión desde la comodidad de su casa a través de la aplicación de ATH Móvil.</h3>
+                    <h3>Puedes ordenar esta infusión por teléfono desde la comodidad de su casa y pagar a través de la aplicación de ATH Móvil.</h3>
                     <ol>
                         <li>Primero enviar un mensaje de texto al <a href='+1-787-216-3529'>(787)216-3529</a>, 
                         o acceder a la <a href='https://www.facebook.com/Reinacortesinfusion'>página de Facebook </a>

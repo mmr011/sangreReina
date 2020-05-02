@@ -33,17 +33,17 @@ const photos = [
     {
         id: 3, 
         image: <img width='47%' src={Crates} />,
-        caption: <p className='crates-caption'>Hecho incgredientes medicinales saludables y empacado a mano</p>
+        caption: <p className='crates-caption'>Hecho con ingredientes medicinales saludables y empacado a mano.</p>
     }, 
     {
         id: 4, 
         image: <img width='47%' src={Iced} />,
-        caption: <p className='iced-caption'>Alternativa perfecta para refrescarse en días caluroso</p>
+        caption: <p className='iced-caption'>Alternativa perfecta para refrescarse en días calurosos.</p>
     }, 
     {
         id: 5, 
         image: <img width='47%' src={Little} />, 
-        caption: <p className='little-caption'>Disponible de 1 litro ($10) y medio litro ($5)</p>
+        caption: <p className='little-caption'>Disponible de 1 litro ($10) y medio litro ($5).</p>
     }
 ]
 
