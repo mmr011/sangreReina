@@ -1,7 +1,8 @@
 import React from 'react';
-import Ingredients from '../PopUps/Ingredients'
-import Order from '../PopUps/Order'
-import Contacts from '../PopUps/Contacts'
+import Ingredients from '../PopUps/Ingredients';
+import Order from '../PopUps/Order';
+import Contacts from '../PopUps/Contacts';
+import Benefits from '../PopUps/Benefits';
 import './Banner.css';
 
 class Banner extends React.Component {
@@ -39,6 +40,15 @@ class Banner extends React.Component {
       return; 
     }
   }
+
+  showBenefits() {
+    if(this.props.showBenefits) {
+      return (
+        <Benefits
+        toggleBenefits={this.props.toggleBenefits}/>
+      )
+    }
+  }
   
   handleMouseOverIngredients() {
     const button = document.getElementById('button'); 
@@ -70,9 +80,25 @@ class Banner extends React.Component {
     button3.style.backgroundColor = 'hsla(94, 33%, 4%, 0.6)';
   }
 
+  handleMouseOverBenefits() {
+    const button4 = document.getElementById('button4'); 
+    button4.style.backgroundColor = 'hsl(352.1,60.4%,19.8%)';
+  }
+
+  handleMouseOutBenefits() {
+    const button4 = document.getElementById('button4'); 
+    button4.style.backgroundColor = 'hsla(94, 33%, 4%, 0.6)';
+  }
+
   render() {
     return (
         <div className='banner'>
+          <button
+            id='button4'
+            className='button'
+            onClick={this.props.toggleBenefits}
+            onMouseOver={this.handleMouseOverBenefits}
+            onMouseOut={this.handleMouseOutBenefits}>Beneficios</button>
           <button
             id='button' 
             className='button' 
@@ -80,20 +106,21 @@ class Banner extends React.Component {
             onMouseOver={this.handleMouseOverIngredients}
             onMouseLeave={this.handleMouseOutIngredients}>Ingredientes</button>
           <button 
-          id='button2'
-          className='button'
-          onClick={this.props.toggleOrder}
-          onMouseOver={this.handleMouseOverOrders}
-          onMouseLeave={this.handleMouseOutOrders}>Ordenar</button>
+            id='button2'
+            className='button'
+            onClick={this.props.toggleOrder}
+            onMouseOver={this.handleMouseOverOrders}
+            onMouseLeave={this.handleMouseOutOrders}>Ordenar</button>
           <button
-          id='button3'
-          className='button'
-          onClick={this.props.toggleContacts}
-          onMouseOver={this.handleMouseOverContacts}
-          onMouseLeave={this.handleMouseOutContacts}>Contacts</button>
+            id='button3'
+            className='button'
+            onClick={this.props.toggleContacts}
+            onMouseOver={this.handleMouseOverContacts}
+            onMouseLeave={this.handleMouseOutContacts}>Contacts</button>
           {this.showIngredients()}
           {this.showOrder()}
           {this.showContacts()}
+          {this.showBenefits()}
         </div>
      )  
   }

@@ -11,11 +11,13 @@ class App extends React.Component {
     this.state = {
       showIngredients: false, 
       showOrder: false,
-      showContacts: false
+      showContacts: false, 
+      showBenefits: false,
     }
     this.toggleIngredients = this.toggleIngredients.bind(this);
     this.toggleOrder = this.toggleOrder.bind(this); 
     this.toggleContacts = this.toggleContacts.bind(this);
+    this.toggleBenefits = this.toggleBenefits.bind(this);
   }
 
   toggleIngredients() {
@@ -36,6 +38,12 @@ class App extends React.Component {
     });
   }
 
+  toggleBenefits() {
+    this.setState({
+      showBenefits: !this.state.showBenefits
+    })
+  }
+
   render() {
     return (
       <div id='App' className='container'>
@@ -43,9 +51,11 @@ class App extends React.Component {
           showIngredients={this.state.showIngredients}
           showOrder={this.state.showOrder}
           showContacts={this.state.showContacts}
+          showBenefits={this.state.showBenefits}
           toggleIngredients={this.toggleIngredients}
           toggleOrder={this.toggleOrder}
-          toggleContacts={this.toggleContacts}/>
+          toggleContacts={this.toggleContacts}
+          toggleBenefits={this.toggleBenefits}/>
         <div className="App">
           <Carousel />
           <div className='logo'></div>
