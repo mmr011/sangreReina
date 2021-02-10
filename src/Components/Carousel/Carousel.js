@@ -43,7 +43,7 @@ const photos = [
     {
         id: 5, 
         image: <img width='47%' src={Little} />, 
-        caption: <p className='little-caption'>Disponible de 1 litro ($10) y medio litro ($5).</p>
+        caption: <p className='little-caption'>Disponible de 1 litro ($10) y medio litro ($25).</p>
     }
 ]
 

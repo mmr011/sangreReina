@@ -16,11 +16,11 @@ class Ingredients extends React.Component {
             <h3>Lista de ingredientes:</h3>
             <ul>
               <li>Agua Filtrada</li>
-              <li>Jengibre</li>
-              <li>Canela</li>
-              <li>Flor de Jamaica</li>
-              <li>Anís Estrellado</li>
-              <li>Clavos de Especias</li>
+              <li>Jengibre: Antiflamatorio, combate enfermedates respiratorias, artrosis, diabetes</li>
+              <li>Canela: Ayuda a controlar los niveles de colesterol malo y glucosa, elimina la flatulencia</li>
+              <li>Flor de Jamaica: Detox, Antioxidante, Vitamina C, Alivia imsomnio</li>
+              <li>Anís Estrellado: Mejor que el Tamiflu porque es natural, es antibacteriano y fungicida</li>
+              <li>Clavos de Especias: Ricon en eugenole (anticuagulante), tiene propeidades analgesicas, antisepticas, antivomitativas, y sedante</li>
             </ul>
          </div>
     </div>
